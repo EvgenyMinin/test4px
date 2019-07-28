@@ -60,7 +60,7 @@ html(lang="en")
                             .block
                                 i.offer__icon
                                 a.offer__link(href="#") Записаться на Тест-драйв
-                            button.offer__button Получить предложение
+                            button.button Получить предложение
                             a.offer__question(href="#") Нашли дешевле?
                     .presentation
                         img.presentation__background(src="img/mountain.png", alt="mountain")
@@ -94,3 +94,35 @@ html(lang="en")
                             p льготный кредит
                         p Оформите кредит на выгодных условиях.
                         p Низкие ставки. Нет скрытых платежей.
+        section
+            .wrapper
+                h2.section-title Автомобили в наличии
+                .stock
+                    .stock__logo
+                        img(src="../img/fortuner_mini_model.png", alt="fortuner_mini_model")
+                    .stock__description
+                        .card-info
+                            p.card-info__title Fortuner
+                            p Год выпуска: 2016
+                            p Двигатель: 1,6 МТ (110 л.с.)
+                            p КПП: Механическая
+                            p Привод: Передний привод
+                            p Цвет: Серый металик
+                        .card-credit
+                            p.card-credit__profit выгода до 
+                                span 100 500
+                            p.card-credit__sum в кредит от 
+                                span 5 000
+                            p.card-credit__info Подробнее: 
+                                span +7(351)211-10-10
+                            button.button Узнать цену
+                .stock-button
+                    button Смотреть ещё
+        section.special-offer
+            .wrapper
+                h2.section-title.special-offer__title Уникальное предложение
+                p Получите максимально выгодные условия на покупку 
+                    strong Toyota
+                .special-offer__input
+                    input.input-phone(type="tel" placeholder='Введите номер телефона')
+                    input.button.input-button(type="button" value='Получить предложение')

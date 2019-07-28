@@ -1,0 +1,67 @@
+.stock
+    display: flex
+    justify-content: space-around
+    align-items: center
+    margin-top: 60px
+    &__logo
+        flex: 1
+        margin: 0 65px 0 45px
+    &__description
+        color: $color_text
+        flex: 2
+        display: flex
+        justify-content: space-between
+        background-color: $color_stock_background
+
+.card-info
+    padding: 20px 30px
+    &__title
+        font-family: ToyotaDisplay
+        font-weight: bold
+        font-size: 16pt
+        padding: 0
+        margin: 0
+
+.card-credit
+    padding: 25px 20px 10px 0
+    font-family: ToyotaText
+    &__profit
+        font-weight: bold
+        text-transform: uppercase
+        font-size: 10pt
+        & span
+            font-size: 20pt
+            color: $color_link
+            &:after
+                content: '₽'
+                margin-left: 5px
+    &__sum
+        font-weight: bold
+        text-transform: uppercase
+        font-size: 10pt
+        & span
+            font-size: 20pt
+            color: $color_link
+            text-transform: none
+            &:after
+                content: '₽/мес'
+                margin-left: 5px
+    &__info
+        margin-bottom: 25px
+        span
+            font-family: ToyotaText
+            font-weight: bold
+
+.stock-button
+    display: block
+    text-align: center
+    margin-top: 40px
+    & button
+        background-color: transparent
+        border: none
+        border-bottom: 2px solid $color_link
+        color: $color_link
+    &:after
+        content: '∨'
+        margin-left: 5px
+        color: $color_link
