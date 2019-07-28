@@ -1,0 +1,130 @@
+main
+    margin-top: 105px
+    position: relative
+
+.title
+    display: flex
+
+.profit
+    font-family: $ToyotaDisplay
+    font-weight: bold
+    text-transform: uppercase
+    margin-top: 70px
+    & p
+        margin: 0
+        &:first-child
+            font-size: 8pt
+            padding-bottom: 3px
+        &:last-child
+            font-size: 24pt
+    &__data
+        padding-bottom: 35px
+        &:before
+            content: ''
+            position: relative
+            display: block
+            border-top: 3px solid $color_table_pseudo
+            bottom: 7px
+            width: 50px
+
+.price:after
+    content: '₽*'
+    margin-left: 10px
+
+.special-price
+    position: absolute
+    right: 40vh    
+
+.description
+    & h1
+        display: inline-block
+        font-family: $ToyotaDisplay
+        font-weight: bold
+        position: relative
+        color: $color_white
+        &:before
+            content: ''
+            background-image: url('../img/sprite.png')
+            background-repeat: no-repeat
+            width: 200%
+            height: 320%
+            top: -40px
+            left: -45px
+            position: absolute
+            z-index: -1
+    & > p
+        margin: 0
+        font-size: 16pt
+    &__list
+        display: table
+        margin-top: 70px
+
+.offer
+    width: 240px
+    text-align: right
+    &__icon
+        display: inline-block
+        background-image: url('../img/sprite.png')
+        background-position: 0 -115px
+        width: 25px
+        height: 25px
+        background-repeat: no-repeat
+    &__link
+        font-size: 13pt
+        text-align: center
+        color: $color_link
+        border-bottom: 1px solid $color_link
+    &__button
+        display: block
+        width: 100%
+        background-color: transparent
+        border: none
+        background-color: $color_link
+        color: $color_white
+        padding: 15px 35px
+        border-radius: 25px
+        margin: 15px 0
+    &__question
+        color: $color_text
+        border-bottom: 3px dotted $color_link
+
+.block
+    display: flex
+    justify-content: space-between
+
+.presentation
+    &__background
+        position: absolute
+        right: 0
+        top: -12vh
+    &__car-model
+        position: absolute
+        top: 17vh
+        right: 37vh
+    &__description
+        font-family: $ToyotaDisplay
+        font-weight: bold
+        color: $color_white
+        line-height: 1.4em
+        &:before
+            content: ''
+            display: block
+            position: absolute
+            background-color: $color_before_pseudo
+            width: 150%
+            height: 100%
+            transform: skewY(10deg) rotate(-9deg)
+            z-index: -1
+            top: -10px
+            left: -60px
+        &:after
+            content: ''
+            display: block
+            position: absolute
+            background: linear-gradient(to top left, $color_after_pseudo, $color_link)
+            width: 160%
+            height: 100%
+            transform: skewX(-20deg)
+            top: -2px
+            left: -55px
+            z-index: -1

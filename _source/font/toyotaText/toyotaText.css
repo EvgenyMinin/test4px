@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'ToyotaText';
+    src: url('Toyota-TextBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ToyotaText';
+    src: url('Toyota-TextNormal.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

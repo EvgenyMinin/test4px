@@ -1,0 +1,32 @@
+.header
+    box-shadow: 0 5px 10px -8px rgba(0, 0, 0, 0.4)
+    
+.header-list
+    display: flex
+    justify-content: space-between
+    align-items: center
+    list-style-type: none
+    height: 100px
+    margin: 0
+    padding: 0
+    &__item
+        color: $color_text
+        padding: 0 30px
+        width: 130px
+        height: 100%
+        text-align: center
+        cursor: pointer
+        &:first-child
+            padding-left: 0
+
+.link
+    font-family: ToyotaDisplay
+    font-weight: bold
+    font-size: 10pt
+    display: block
+    margin-top: 43px
+    color: $color_text
+
+.active
+    background-color: $color_link
+    color: $color_white

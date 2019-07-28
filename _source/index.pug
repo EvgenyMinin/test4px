@@ -4,8 +4,66 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        link(rel="stylesheet", href="css/main.css")
+        link(rel="stylesheet", href="css/style.css")
         link(rel="stylesheet", href="css/normalize.css")
         title 4px Test
     body
-        h1 Hello 4px
+        header.header
+            nav
+                .wrapper
+                    ul.header-list
+                        li.header-list__item
+                            a.link(href="#") Corolla
+                        li.header-list__item
+                            a.link(href="#") Camry
+                        li.header-list__item
+                            a.link(href="#") RAV4
+                        li.header-list__item
+                            a.link(href="#") Highlander
+                        li.header-list__item
+                            a.link(href="#") Land Cruiser Prado
+                        li.header-list__item
+                            a.link(href="#") Land Cruiser 200
+                        li.header-list__item
+                            a.link(href="#") Hilux
+                        li.header-list__item.active
+                            a.link.active(href="#") Fortuner
+                        li.header-list__item
+                            a.link(href="#") Prius
+        main
+            .wrapper
+                section.title
+                    .description
+                        h1 Fortuner
+                        p Ты настоящий
+                        table.profit
+                            tbody
+                                tr.profit__row
+                                    td.profit__data
+                                        p кредит в день от
+                                        p.price 304
+                                    td.profit__data
+                                        p выгода до
+                                        p.price 365 000
+                                tr.profit__row
+                                    td.profit__data
+                                        p скидка по trade-in до
+                                        p.price 150 000
+                                    td.profit__data
+                                        p в подарок
+                                        p 3 TO
+                                tr.profit__row(colspan='2')
+                                    td.profit__data
+                                        p в подарок
+                                        p зимние шины
+                        .offer
+                            .block
+                                i.offer__icon
+                                a.offer__link(href="#") Записаться на Тест-драйв
+                            button.offer__button Получить предложение
+                            a.offer__question(href="#") Нашли дешевле?
+                    .presentation
+                        img.presentation__background(src="img/mountain.png", alt="mountain")
+                        img.presentation__car-model(src="img/fortuner_main_model.png", alt="car-model")
+                        .special-price
+                            p.presentation__description Специальная цена <br> от официального диллера
