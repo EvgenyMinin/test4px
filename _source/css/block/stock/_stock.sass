@@ -16,7 +16,7 @@
 .card-info
     padding: 20px 30px
     &__title
-        font-family: ToyotaDisplay
+        font-family: $ToyotaDisplay
         font-weight: bold
         font-size: 16pt
         padding: 0
@@ -24,12 +24,14 @@
 
 .card-credit
     padding: 25px 20px 10px 0
-    font-family: ToyotaText
+    font-family: $ToyotaText
     &__profit
         font-weight: bold
         text-transform: uppercase
         font-size: 10pt
         & span
+            font-family: $PTSans
+            font-weight: bold
             font-size: 20pt
             color: $color_link
             &:after
@@ -40,6 +42,8 @@
         text-transform: uppercase
         font-size: 10pt
         & span
+            font-family: $PTSans
+            font-weight: bold
             font-size: 20pt
             color: $color_link
             text-transform: none
@@ -49,7 +53,7 @@
     &__info
         margin-bottom: 25px
         span
-            font-family: ToyotaText
+            font-family: $ToyotaText
             font-weight: bold
 
 .stock-button
