@@ -61,6 +61,7 @@
         border: none
         border-bottom: 2px solid $color_link
         color: $color_link
+        cursor: pointer
     &:after
         content: ''
         display: inline-block
@@ -70,3 +71,9 @@
         height: 15px
         margin-left: 5px
         transform: translateY(2px)
+
+@media screen and (max-width:720px)
+    .stock
+        flex-direction: column
+        &__logo
+            margin-bottom: 25px

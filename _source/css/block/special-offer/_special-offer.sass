@@ -18,11 +18,21 @@
     transform: translateX(120px)
     box-shadow: 0 5px 10px -8px rgba(0, 0, 0, 0.4)
     margin-bottom: 65px
+    outline: none
+    padding-left: 20px
     &::placeholder
         color: $color_placeholder
-        padding-left: 20px
 
 .input-button
     width: 240px
     height: 52px
     transform: translate(-120px, -15px)
+
+@media screen and (max-width:720px)
+    .input-phone
+        width: 100%
+        position: relative
+        transform: translateX(0)
+    .input-button
+        position: absolute
+        right: -50px

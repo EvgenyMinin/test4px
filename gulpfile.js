@@ -197,7 +197,7 @@ gulp.task("clean", function() {
     return del.sync("_assets");
 });
     
-gulp.task('watch', ['pug', 'browser-sync'], function () {
+gulp.task('watch', ['build', 'pug', 'browser-sync'], function () {
     watch([path.src.js], function () {
         gulp.start('js:work:build');
     });

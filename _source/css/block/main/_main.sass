@@ -4,6 +4,7 @@ main
 
 .title
     display: flex
+    justify-content: space-between
 
 .profit
     font-family: $ToyotaDisplay
@@ -33,7 +34,9 @@ main
 
 .special-price
     position: absolute
-    right: 40vh    
+    right: 40vh
+    top: 0 
+    z-index: 1
 
 .description
     & h1
@@ -83,14 +86,15 @@ main
     justify-content: space-between
 
 .presentation
+    &__car-model
+        position: relative
+        margin-top: 150px
+        z-index: 2
     &__background
         position: absolute
         right: 0
         top: -12vh
-    &__car-model
-        position: absolute
-        top: 17vh
-        right: 37vh
+        z-index: 1
     &__description
         font-family: $ToyotaDisplay
         font-weight: bold
@@ -118,3 +122,33 @@ main
             top: -2px
             left: -55px
             z-index: -1
+
+@media screen and (max-width:1600px)
+    .description
+        flex: 2
+    .presentation
+        flex: 2
+    .presentation__car-model
+        width: 100%
+        transform: translate(-100px, 50px)
+    .presentation__background
+        width: 60%
+        top: -10vh
+        
+
+@media screen and (max-width:1440px)
+    .presentation__background
+        width: 60%
+        top: -2vh
+
+@media screen and (max-width:720px)
+    .description
+        margin-top: 50px
+    .presentation__car-model
+        transform: none
+    .presentation__background
+        width: 100%
+        top: 0
+    .title
+        flex-direction: column-reverse
+        margin-top: 20px
